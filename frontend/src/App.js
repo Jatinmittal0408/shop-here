@@ -1,6 +1,5 @@
 import React from 'react';
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import HomeIcon from '@material-ui/icons/Home';
+// import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { useDispatch, useSelector } from 'react-redux';
 import { BrowserRouter, Link, Route } from 'react-router-dom';
 import { signout } from './actions/UserActions';
@@ -42,7 +41,7 @@ function App() {
           </div>
           <div>
             <Link to="/cart">
-              <ShoppingCartIcon fontSize="large" />
+              Cart
               {cartItems.length > 0 && (
                 <span className="badge">{cartItems.length}</span>
               )}
